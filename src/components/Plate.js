@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+//todo: render a list items that have been added to your plate
+
 export default class Plate extends Component {
 
   render () {
@@ -7,13 +9,8 @@ export default class Plate extends Component {
       <div>
         <h3>Plate</h3>
         <ul>
-          {
-            this.props.plate.map((item, idx) => (
-              <li key={idx}>
-                {item.name}
-              </li>
-            ))
-          }
+          <li>Example item</li>
+          <li>You should delete this</li>
         </ul>
       </div>
     );

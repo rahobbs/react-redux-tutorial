@@ -1,18 +1,11 @@
 import { connect } from 'react-redux';
 import Menu from '../components/Menu';
-import { addItemToPlate } from '../action-creators/plate';
 
-const mapStateToProps = ({menu}) => ({
-  menu
-});
+//todo: define mapStateToProps
 
-const mapDispatchToProps = dispatch => ({ 
-  addToPlate: function (item) {
-    dispatch(addItemToPlate(item))
-  }
-});
+//todo: define mapDispatchToProps
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+  null,
+  null
 )(Menu);

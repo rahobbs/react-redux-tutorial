@@ -1,14 +1,11 @@
 import { connect } from 'react-redux';
-
 import Plate from '../components/Plate';
 
-const mapStateToProps = ({ plate }) => ({ 
-  plate
-});
+//todo: define mapStateToProps
 
-// const mapDispatchToProps = dispatch => ({ });
+//todo: define mapDispatchToProps
 
 export default connect(
-  mapStateToProps,
+  null,
   null
 )(Plate);
