@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from 'redux';
 import rootReducer from './reducers';
-import createLogger from 'redux-logger'; 
+import createLogger from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 
 export default createStore(
@@ -10,3 +10,5 @@ export default createStore(
     thunkMiddleware
   )
 );
+
+//QUESTION what does redux-thunk do?

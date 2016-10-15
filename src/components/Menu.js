@@ -9,12 +9,12 @@ export default class Menu extends Component {
       <div>
         <h3>Menu</h3>
         <ul>
-          <li>
-            <button>There should be some menu items here</button>
-          </li>
-           <li>
-            <button>There's some dummy data you can put on the state in items.js</button>
-          </li>
+          {/*NOTE how we used idx here*/}
+          {/*NOTE onClick must take a function that calls this.props.whateverActionCreator*/}
+        {this.props.menu.map((item, index) =>(
+           <li key={index}><button onClick={() => this.props.addToPlate(item)}>{item.name}</button></li>
+          ))
+        }
         </ul>
       </div>
     );

@@ -15,6 +15,9 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={AppContainer}>
+        <IndexRoute component = {MenuContainer} />
+        <Route path="/menu" component={MenuContainer} />
+        <Route path="/plate" component={PlateContainer} />
       </Route>
     </Router>
   </Provider>,
